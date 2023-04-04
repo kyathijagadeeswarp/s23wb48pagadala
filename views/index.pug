@@ -4,3 +4,13 @@ block content
   h1= title
   p Welcome to Assignment10 #{title}
   <button type="button" class="btn btn-secondary">Press Button</button>
+  button(onclick="doReduce()") Add
+div#reduce Reduce the value
+
+  var count = 20;
+  var change = -1;
+  function doReduce() {
+    count += change;
+    change -= 1;
+    document.getElementById("reduce").textContent = "Count " + count + " with change " + change;
+  }
