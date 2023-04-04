@@ -3,7 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to Assignment10 #{title}
-  
-  
-  button(onclick="doReduce()", type="button") Press me
+  button.btn.btn-secondary(onclick="doReduce()") Press Button
   div#reduce Reduce the value
+  
+  script.
+    let count = 20;
+    let change = -1;
+    
+    function doReduce() {
+      count += change;
+      change--;
+      document.getElementById("reduce").innerText = "Count " + count + " with change " + change;
+    }
