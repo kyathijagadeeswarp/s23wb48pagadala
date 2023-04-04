@@ -39,3 +39,15 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+const express = require('express');
+const app = express();
+
+app.get('/Shoe', (req, res) => {
+  // your code to handle the request goes here
+});
+
+// start the server
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
