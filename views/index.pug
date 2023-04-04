@@ -3,8 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to Assignment10 #{title}
-  <button type="button" class="btn btn-secondary">Press Button</button>
   
-  button(onclick="doReduce()") Add
+  
+  button(onclick="doReduce()", type="button") Press me
   div#reduce Reduce the value
-  
