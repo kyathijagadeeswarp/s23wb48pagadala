@@ -1,18 +1,14 @@
 extends layout
 
 block content
+  - const shoes = [{ shoe_type: 'Sneakers', size: 9, cost: 80 }, { shoe_type: 'Boots', size: 10, cost: 120 }, { shoe_type: 'Sandals', size: 8, cost: 50 }];
 
--
-// Your server-side code here
-const shoes = [  { shoe_type: 'Sneakers', size: 9, cost: 80 },  { shoe_type: 'Boots', size: 10, cost: 120 },  { shoe_type: 'Sandals', size: 8, cost: 50 }];
-
-.container-fluid
-  .row
-    each shoe in shoes
-      div.col-sm-4
-        div.col-sm-2
-          h4= shoe.shoe_type
-          p= "Size: #{shoe.size} | Cost: #{shoe.cost}"
+  .container-fluid
+    .row
+      each shoe in shoes
+        div.col-sm-4
+          div.col-sm-2
+            h4= shoe.shoe_type
+            p= "Size: #{shoe.size} | Cost: #{shoe.cost}"
+  
   a(href='/shoes') View all shoes
-
-
