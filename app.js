@@ -43,7 +43,7 @@ module.exports = app;
 const express = require('express');
 const app = express();
 
-app.get('/Shoe', (req, res) => {
+app.get('/shoes', (req, res) => {
   // your code to handle the request goes here
 });
 
