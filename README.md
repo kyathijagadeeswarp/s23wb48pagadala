@@ -6,7 +6,7 @@ link to render : https://s23wb48pagadala.onrender.com
 ### Class details:
 Shoe
 shoe_name - string
-cost      - number
+size      - number
 brand     - string
 
 
