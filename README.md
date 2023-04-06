@@ -3,11 +3,10 @@ good message
 
 link to render : https://s23wb48pagadala.onrender.com
 
-## shoes
+### Class details:
+Shoe
+shoe_name - string
+cost      - number
+brand     - string
 
-| Attribute   | Type   |
-| ----------- | ------ |
-| shoe_type   | string |
-| size        | string |
-| cost        | number |
 
