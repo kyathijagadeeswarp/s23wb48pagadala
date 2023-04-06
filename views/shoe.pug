@@ -1,4 +1,14 @@
 extends layout
 
 block content
-  
+  h1= title
+  - let results=[{shoe_name:"Sandals",size:9,brand:"Nike"},{shoe_name:"Boots",size:8,brand:"Adidas"},{shoe_name:"Flip flops",size:7,brand:"Puma"}]
+  div(class="container-fluid")
+  div(class="row")
+  each value,index in results
+    div(class="col-sm-2" onclick=`buy(${index})`)  #{value.shoe_name} Shoe, size is #{value.size}, with #{value.brand}
+  script. 
+    function buy(index)
+    {
+      alert(`You purchased Item ${index+1}`)
+    } 
